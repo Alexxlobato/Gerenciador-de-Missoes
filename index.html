@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Missões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Missões</h1>
+        <label for="missionInput">Digite a missão...</label>
+        <input type="text" id="missionInput" placeholder="Digite a missão...">
+        <button id="addMissionBtn">Adicionar Missão</button>
+        <button id="drawMissionsBtn">Sortear Missão</button>
+        <ul id="missionsList"></ul>
+        
+        <div id="statisticsMissions">
+
+            <h2>Estatísticas</h2>
+
+            <p>
+                Total: <span id="totalMissions">0</span>
+            </p>
+
+            <p>
+                Concluídas: <span id="completeMissions">0</span>
+            </p>
+
+            <p>
+                Pendentes: <span id="pendentMissions">0</span>
+            </p>
+        </div>
+        
+        <div id="drawMission">
+            <h2>Missão Sorteada</h2>
+            <p id="drawMissionText">Nenhuma missão sorteada</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

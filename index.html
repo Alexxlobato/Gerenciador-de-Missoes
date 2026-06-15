@@ -9,35 +9,33 @@
 <body>
     <div class="container">
         <h1>Gerenciador de Missões</h1>
+        
         <label for="missionInput">Digite a missão...</label>
         <input type="text" id="missionInput" placeholder="Digite a missão...">
         <button id="addMissionBtn">Adicionar Missão</button>
         <button id="drawMissionsBtn">Sortear Missão</button>
-        <ul id="missionsList"></ul>
-        
-        <div id="statisticsMissions">
 
-            <h2>Estatísticas</h2>
-
-            <p>
-                Total: <span id="totalMissions">0</span>
-            </p>
-
-            <p>
-                Concluídas: <span id="completeMissions">0</span>
-            </p>
-
-            <p>
-                Pendentes: <span id="pendentMissions">0</span>
-            </p>
+        <div class="filters-container">
+            <button id="filterAll">Todas</button>
+            <button id="filterPending">Pendentes</button>
+            <button id="filterCompleted">Concluídas</button>
         </div>
-        
+
+        <ul id="missionsList"></ul>
+
+        <div id="statisticsMissions">
+            <h2>Estatísticas</h2>
+            <p>Total: <span id="totalMissions">0</span></p>
+            <p>Concluídas: <span id="completeMissions">0</span></p>
+            <p>Pendentes: <span id="pendentMissions">0</span></p>
+        </div>
+
         <div id="drawMission">
             <h2>Missão Sorteada</h2>
             <p id="drawMissionText">Nenhuma missão sorteada</p>
         </div>
-
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
